@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+
+{% block signup %}
+<form action="/validate-signup" method="POST">
+    <table>
+        <tr>
+            <td><label for="username">Username:</label></td>
+            <td>
+            <input name="username" type="text" value="{{username}}">
+            </td>
+            <td>
+                <p class="error">{{username_error}}</p>
+            </td>
+        </tr>
+        <tr>
+            <td><label for="password">Password:</label></td>
+            <td>
+                <input name="password" type="password">
+                <td>
+                    <p class="error">{{password_error}}</p>
+                </td>
+            </td>
+        </tr>
+        <tr>
+            <td><label for="verify">Verify Password:</label></td>
+            <td>
+                <input name="verify" type="password">
+            </td>
+            <td>
+                <p class="error">{{verify_error}}</p>
+            </td>
+        </tr>
+        <tr>
+            <td><label for="email">Email (optional):</label></td>
+            <td>
+                <input name="email" value="{{email}}">
+            </td>
+            <td>
+                <p class="error">{{email_error}}</p>
+            </td>
+        </tr>
+    </table>
+    <input type="submit" value="Sign Up!">
+</form>
+
+{% endblock %}
