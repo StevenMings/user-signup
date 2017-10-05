@@ -6,7 +6,7 @@
         <tr>
             <td><label for="username">Username:</label></td>
             <td>
-            <input name="username" type="text" value="{{username}}">
+            <input id="username" name="username" type="text" value="{{username}}"/>
             </td>
             <td>
                 <p class="error">{{username_error}}</p>
@@ -15,7 +15,7 @@
         <tr>
             <td><label for="password">Password:</label></td>
             <td>
-                <input name="password" type="password">
+                <input id="password"name="password" type="password">
                 <td>
                     <p class="error">{{password_error}}</p>
                 </td>
@@ -24,7 +24,7 @@
         <tr>
             <td><label for="verify">Verify Password:</label></td>
             <td>
-                <input name="verify" type="password">
+                <input id= "verify" name="verify" type="password">
             </td>
             <td>
                 <p class="error">{{verify_error}}</p>
@@ -33,7 +33,7 @@
         <tr>
             <td><label for="email">Email (optional):</label></td>
             <td>
-                <input name="email" value="{{email}}">
+                <input id="email" name="email" value="{{email}}">
             </td>
             <td>
                 <p class="error">{{email_error}}</p>

@@ -25,7 +25,7 @@ def validate_signup():
 
 # Username
     if len(username) > 20 or len(username) < 3:
-        username_error = "Username value out of range (Between 3 - 20 Characters Only)""
+        username_error = "Username value out of range (Between 3 - 20 Characters Only)"
 
     if " " in username:
         username_error = "Spaces are not allowed"
